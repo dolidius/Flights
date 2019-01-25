@@ -1,0 +1,14 @@
+.flex-spacer{ flex: 1; }
+
+.mt-sm{ margin-top: 3rem; }
+.mt-md{ margin-top: 6rem; }
+.mt-bg{ margin-top: 9rem; @media(max-width: 1040px){margin-top: 6rem;}}
+.mt-hg{ margin-top: 18rem; }
+
+.ml-sm{ margin-left: 3rem; }
+.ml-md{ margin-left: 6rem; }
+.ml-bg{ margin-left: 9rem; }
+.ml-hg{ margin-left: 13rem; }
+
+.p-sm{ padding: 2.5rem; }
+.p-md{ padding: 6rem; }

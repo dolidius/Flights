@@ -1,0 +1,72 @@
+.popular{
+    padding: 10rem 0 18rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        grid-gap: 15rem;
+        margin-top: 8rem;
+        font-family: 'K2D';
+
+        @media (max-width: 1575px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 790px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+    &__item{
+        text-align: center;
+
+        &-image{
+
+            img{
+                width: 40rem;
+            }
+
+        }
+
+        &-name{
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-dark-gray;
+            font-size: 2rem;
+            font-weight: bold;
+        }   
+
+    }
+
+    &__button{
+        text-align: center;
+
+        button{
+            font-family: 'K2D';
+            padding: 1.6rem 5.5rem;
+            font-size: 1.85rem;
+            border: 2px solid $color-light-purple;
+            color: $color-light-purple;
+            text-transform: uppercase;
+            font-weight: bold;
+            outline: none;
+            background: transparent;
+            transition: all .3s;
+            cursor: pointer;
+            
+            &:hover{
+                background: $color-light-purple;
+                color: white;
+                border-color: $color-dark-purple;
+            }
+
+        }
+
+    }
+
+}

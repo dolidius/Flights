@@ -1,0 +1,37 @@
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    
+    &__purple{
+        height: 4px;
+        background: $color-purple;
+        width: 18.5%;
+
+        @media (max-width: 1500px) {
+            width: 22%;
+        }
+
+        @media (max-width: 1450px) {
+            width: 25%;
+        }
+
+        @media (max-width: 1270px) {
+            width: 30%;
+        }
+
+        @media (max-width: 600px) {
+            width: 35%;
+        }
+    }
+
+    &__heart{
+
+        img{
+            width: 6.5rem;
+        }
+
+    }
+  
+}

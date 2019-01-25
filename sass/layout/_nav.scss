@@ -1,0 +1,72 @@
+.nav{
+    font-family: 'K2D';
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.2);
+
+    &__logo{
+        padding: 0 2rem 0 7rem;
+        
+        img{
+            width: 4.5rem;
+        }
+
+    }
+
+    &__items{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+    }
+
+    &__item{
+        margin: 0 3.5rem;
+        font-size: 2rem;
+        color: $color-gray;
+        cursor: pointer;
+
+        &--active{
+            color: $color-purple;
+        }
+
+        &:hover{
+            color: $color-purple;
+        }
+    }
+
+    &__search{
+        margin-right: 7rem;
+        position: relative;
+
+        input{
+            border: 2px solid $color-light-gray;
+            font-family: inherit;
+            padding: .8rem;
+            padding-left: 4rem;
+            font-size: 1.4rem;
+            width: 18.5rem;
+        }
+
+        &-icon{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 22px;
+            color: $color-purple;
+            font-size: 1.4rem;
+        }
+    }
+
+}

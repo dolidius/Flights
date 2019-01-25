@@ -1,0 +1,28 @@
+.paragraph{
+    width: 45%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: center;
+    color: #9f9f9f;
+    font-family: 'Roboto';
+    align-self: center;
+
+    @media (max-width: 1450px) {
+        width: 55%;
+    }
+
+    @media (max-width: 1300px) {
+        width: 65%;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    @media(max-width: 700px){
+        width: 75%;
+    }
+
+}

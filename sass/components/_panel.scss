@@ -1,0 +1,126 @@
+.panel{
+    width: 76%;
+    height: 20rem;
+    background: $color-dark-purple;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+    left: 50%;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    font-family: 'K2D';
+
+    @media(max-width: 1370px){
+        width: 80%;
+    }
+
+    &__group{
+
+        &:first-of-type{
+            padding-left: 5rem;
+        }
+
+        padding: 4rem;
+
+        @media (max-width: 1620px) {
+            padding: 2rem;
+        }
+    }
+
+    &__input{
+        border: none;
+        border-bottom: 2px solid #7c4a86;
+        background: transparent;
+        width: 20rem;
+        padding: 1rem 0;
+        font-family: inherit;
+        font-size: 2rem;
+        outline: none;
+        color: white;
+
+        &::placeholder{
+            color: #B6B6B6;
+        }
+
+        @media (max-width: 1620px) {
+            width: 18rem;
+        }
+
+        @media (max-width: 1480px) {
+            width: 14rem;
+        }
+
+    }
+
+    &__calendar{
+        padding: 1.7rem;
+        margin-left: 6rem;
+
+        @media (max-width: 1730px) {
+            margin-left: 3rem;
+        }
+
+        img{
+            width: 3.5rem;
+        }
+        
+    }
+
+    &__date{
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    &__counter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+
+        &-value{
+            color: white;
+            font-size: 2.3rem;
+            padding: 1.5rem;
+        }
+
+        img{
+            width:1.5rem;
+            cursor: pointer;
+        }
+
+    }
+
+    &__people{
+        margin-left: 12rem;
+
+        @media (max-width: 1840px) {
+            margin-left: 7rem
+        }
+
+        @media (max-width: 1730px) {
+            margin-left: 4rem;
+        }
+    }
+
+    &__move{
+        height: 100%;
+        width: 8%;
+        align-content: flex-end;
+        background: $color-light-purple;
+        box-shadow: 0 3rem 6rem rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 2.4rem;
+            cursor: pointer;
+        }
+
+    }
+
+}
