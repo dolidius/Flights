@@ -131,6 +131,7 @@ a {
   @media (max-width: 390px) {
     .heading__tertiary {
       font-size: 3.2rem; } }
+  
 
 .panel {
   width: 76%;
@@ -154,6 +155,11 @@ a {
     @media (max-width: 1620px) {
       .panel__group {
         padding: 2rem; } }
+@media(max-width: 1180px){
+    .panel{
+      display: none;
+    }
+  }
   .panel__input {
     border: none;
     border-bottom: 2px solid #7c4a86;
